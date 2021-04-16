@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://EmotionGrid.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Game.gd" type="Script" id=2]
+[ext_resource path="E:/FONTBASE/Sensible Fonts/Unna-Regular.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 36
+use_filter = true
+font_data = ExtResource( 3 )
+
+[node name="Game" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="EmotionGrid" parent="." instance=ExtResource( 1 )]
+margin_top = 62.0
+
+[node name="Label" type="Label" parent="."]
+margin_right = 1023.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 1 )
+text = "etsert"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
